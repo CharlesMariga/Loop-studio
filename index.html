@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Loopstudio</title>
   </head>
@@ -58,20 +59,30 @@
             </div>
           </div>
           <!-- Hamburger button -->
-          <div class="md:hidden">
+          <div class="relative z-40 md:hidden">
             <button
-              class="hamburger open relative z-40 block focus:outline-none md:hidden"
+              class="z-40 flex flex-col gap-2 focus:outline-none md:hidden"
               id="menu-btn"
-              type="button"
             >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
+              <span class="hamburger-top">&nbsp;</span>
+              <span class="hamburger-middle">&nbsp;</span>
+              <span class="hamburger-bottom">&nbsp;</span>
             </button>
           </div>
         </nav>
 
-        <!-- TODO: Mobile menu -->
+        <!-- Mobile menu -->
+        <div
+          id="menu"
+          class="flex-end absolute top-0 bottom-0 left-0 hidden min-h-screen w-full flex-col space-y-3 overflow-hidden bg-black py-1 pt-40 pl-12 text-lg uppercase text-white md:hidden"
+        >
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
+          <a href="#" class="hover:text-pink-500">Products</a>
+          <a href="#" class="hover:text-pink-500">Support</a>
+        </div>
+
         <div
           class="mt-32 mb-32 max-w-lg border-2 p-4 font-sans text-4xl uppercase text-white md:m-32 md:mx-0 md:p-10 md:text-6xl"
         >
@@ -412,5 +423,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

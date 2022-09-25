@@ -40,37 +40,20 @@
 }
 
 /* Hamburger menu */
-.hamburger {
-  cursor: pointer;
-  with: 24px;
-  height: 24px;
-  transition: all 0.25s;
-  position: relative;
-}
-
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-  position: absolute;
+  background: #fff;
   width: 24px;
   height: 2px;
-  top: 0;
-  right: 0;
-  background: #fff;
+  display: block;
   transform: rotate(0);
   transition: all 0.5s;
 }
 
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
-}
-
 .open {
   transform: rotate(90deg);
+  gap: 0;
 }
 
 .open .hamburger-top {
