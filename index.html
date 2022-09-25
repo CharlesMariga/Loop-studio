@@ -19,7 +19,9 @@
       <!-- Hero section container -->
       <div class="container mx-auto max-w-6xl py-12 px-6">
         <!-- Menu/Logo container -->
-        <nav class="flex items-center justify-between font-bold text-white">
+        <nav
+          class="relative flex items-center justify-between font-bold text-white"
+        >
           <!-- Logo -->
           <img src="images/logo.svg" alt="Logo" />
           <!-- Menu -->
@@ -55,8 +57,18 @@
               ></div>
             </div>
           </div>
-
-          <!-- :TODO: Hamburger button -->
+          <!-- Hamburger button -->
+          <div class="md:hidden">
+            <button
+              class="hamburger open relative z-40 block focus:outline-none md:hidden"
+              id="menu-btn"
+              type="button"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
         </nav>
 
         <!-- TODO: Mobile menu -->
